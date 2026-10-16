@@ -32,4 +32,3 @@ Different blockchain types are covered: public, private, and federated.
 
 Measuring decentralization is not straightforward, but EDI provides a useful reference point.
 The Edinburgh Decentralization Index (EDI) from the University of Edinburgh is mentioned as a tool for measuring decentralization.
-
