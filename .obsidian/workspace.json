@@ -83,12 +83,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "staking-rewards-and-calculation/module1-staking-rewards-and-calculation.md",
+                "file": "blockchain-fundamentals/module5_use_cases.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "module1-staking-rewards-and-calculation"
+              "title": "module5_use_cases"
             }
           }
         ],
@@ -259,19 +259,19 @@
       "bases:Create new base": false
     }
   },
-  "active": "d533711a55a5eb68",
+  "active": "2cd8e6f94be4f5c7",
   "lastOpenFiles": [
-    "future-of-digital-identity-and-KERI/module1-future-of-digital-identity-and-KERI.md",
-    "staking-rewards-and-calculation/module1-staking-rewards-and-calculation.md",
-    "case-study-blockchain-for-real-world-assets/to do.md",
-    "case-study-blockchain-for-ai/to do.md",
-    "Untitled",
-    "agentic-coding/resources.md",
-    "blockchain-fundamentals/module5_use_cases.md",
     "blockchain-fundamentals/module4_cardano_2.md",
     "blockchain-fundamentals/module3_cardano_1.md",
     "blockchain-fundamentals/module2_bitcoin_and_ethereum.md",
     "blockchain-fundamentals/module1_what_is_blockchain.md",
+    "agentic-coding/resources.md",
+    "staking-rewards-and-calculation/module1-staking-rewards-and-calculation.md",
+    "future-of-digital-identity-and-KERI/module1-future-of-digital-identity-and-KERI.md",
+    "case-study-blockchain-for-real-world-assets/to do.md",
+    "case-study-blockchain-for-ai/to do.md",
+    "Untitled",
+    "blockchain-fundamentals/module5_use_cases.md",
     "cardano-governance-intro",
     "intro-to-cardano-governance.md",
     "what-is-open-source",

@@ -1,132 +1,355 @@
-**Origins of Cardano**
+# Origins, Roadmap, Ouroboros, Staking, eUTXO, Smart Contract Languages
 
-There are three Cardano ‘genesis’ entities that have traditionally propped up Cardano.
+---
 
-In 2015, Charles Hoskinson and Jeremy Wood co-founded **Input Output Global** (formerly Input Output Hong Kong). IOG is the development and science arm for Cardano. Since 2015, IOG has been focused on protocol development and academic research. It has more recently pivoted to a venture studio business model with spinoff companies focussed on Lace light wallet (lace.io), RealFi (realfi.io) and the Midnight partner chain among other critical infrastructure projects. Cardano went live in 2017. Built on a foundation of academic peer-reviewed research, it has maintained a 100% uptime since.
+## 1. Origins of Cardano
 
-The **Cardano Foundation (CF)**, based in Zug, Switzerland, was set up as the legal custodian for the Cardano brand and as a contributor to the governance of Cardano. The CF’s statutory purpose is to generally support the adoption and the advancement of Cardano as a public digital infrastructure. Its core activities revolve around providing utilities to the ecosystem, developing enterprise infrastructure tooling, strengthening operational resilience and regulatory clarity, and driving education through different initiatives. Part of these efforts is the facilitation of interactions with various stakeholders, including not only players from the immediate ecosystem but also international stakeholders such as standard setters, lawmakers or regulatory bodies.
+### The three "genesis" entities
 
-**Emurgo**, with a focus on Asia and Africa, is the commercialization arm of Cardano. Emurgo concentrates on Education, Fintech infrastructure, developing the Yoroi wallet, ecosystem growth, smart contract audits and a social network called Cardano Spot.
+Three entities have traditionally propped up Cardano.
 
-The ecosystem has grown and there are now dozens of companies and hundreds of projects < link the latest essential cardano weekly stats > building on Cardano. There are too many to mention here, but visit the ‘Showcase’ section of the Cardano Developer Portal for more details.
+**Input Output Global (IOG)** (formerly Input Output Hong Kong)
 
-From the outset, Cardano’s mission was to improve upon previous generations, and build for the long term. While Ethereum favours ‘more heuristic arguments as it’s trying to do more faster’ as Vitalik Buterin explained, Cardano adopted a ‘first principles’ peer-reviewed **academic research** approach. This involves employing rigorous processes with formal methods, mathematical specs and proofs to deliver high-assurance software. Cardano is built on solid foundations, with over 200 research papers published and scrutinised at the top cryptography conferences.
+- Co-founded in **2015** by **Charles Hoskinson and Jeremy Wood**.
+- The development and science arm of Cardano. Since 2015 it has focused on protocol development and academic research.
+- More recently pivoted to a **venture studio** model, with spinoff companies working on:
+    - **Lace** light wallet (lace.io)
+    - **RealFi** (realfi.io)
+    - the **Midnight** partner chain
+    - other critical infrastructure projects
+- Cardano went live in **2017**. Built on peer-reviewed academic research, and it has had **100% uptime** since.
 
-One of Cardano’s key tenets is an open-source, patent-free philosophy where research papers, formal specifications and code repositories are available to all. Anyone with the appropriate technical skills can review the claims and findings from this academic approach. Other projects have borrowed heavily from IOG’s research in their protocol design. Unlike many projects which are mere forks of existing blockchains, much of Cardano is custom built using a ‘first principles’ approach.
+**Cardano Foundation (CF)**
 
-Cardano identified key areas as essential for mass adoption:
+- Based in **Zug, Switzerland**.
+- Set up as the **legal custodian of the Cardano brand** and a contributor to Cardano's governance.
+- Statutory purpose: support the adoption and advancement of Cardano as a **public digital infrastructure**.
+- Core activities:
+    - providing utilities to the ecosystem
+    - developing enterprise infrastructure tooling
+    - strengthening operational resilience and regulatory clarity
+    - driving education through different initiatives
+- Part of this is facilitating interactions with stakeholders: the immediate ecosystem, plus international ones like standard setters, lawmakers and regulators.
 
-1. **Scalability**. While Bitcoin and Ethereum were landmark technical achievements, both have shortcomings. Bitcoin can handle just seven transactions per second, while Ethereum has had issues handling demand, where at a certain capacity, system bloat sets in, performance becomes unpredictable and transactions fees spike intermittently. The same transaction can incur different gas fees at times depending on network demand. Cardano seeks to address these shortcomings and mirror protocols like Bittorrent, where performance scales as new users join.
-    
-2. **Interoperability**. Most mobile devices only function because of layers of interoperability standards. At a high level, the telecoms industry relies on the Global System for Mobile Communications (GSM) for mobiles to talk to each other across different networks and jurisdictions. The Wi-Fi standard ensures connectivity and faster speeds. TCP/IP is a suite of protocols that enables computers to communicate on the internet. Similarly, the future of blockchain is multi-chain and many dApps and tokens now operate cross-chain. Cardano has multiple solutions that are making their way from research papers to full implementation.
-    
-3. **Governance**, sometimes referred to as sustainability. Bitcoin and Ethereum have both encountered problems as they try to scale. They have no decision-making mechanisms to manage change. When a blockchain grows to millions of users, it’s not viable, or healthy, for a small ‘one pizza’ core team to be dictating outcomes. Worse still, it can lead to traumatic splits, for example, Bitcoin had the ‘Big blocks versus SegWit’ debate which eventually led to a hard fork resulting in two chains, Bitcoin Cash and Bitcoin. Governance is not a sexy topic for many, but arguably essential if a blockchain is to last. How do we decide on an important parameter change? What happens when quantum computers arrive? How does a fledgling decentralized protocol decide on a roadmap? There are also funding considerations, money must come from somewhere for startups to breathe. There's also a tragedy of the commons scenario where users agree essential infrastructure, and critical updates, are required but there's no mechanisms to apply for, or approve, funding for development.
-    
+**Emurgo**
 
-Cardano is designed to enable the community to sustain its development by submitting and voting on funding proposals in Project Catalyst. To maintain long-term viability, the community controls the treasury system, which is regularly topped up from various sources. There is a clear plan in place to implement end-to-end on-chain governance.
+- Focused on **Asia and Africa**.
+- The **commercialization arm** of Cardano.
+- Works on: education, fintech infrastructure, the **Yoroi** wallet, ecosystem growth, smart contract audits, and a social network called **Cardano Spot**.
 
-**Cardano Development Milestones**
+### Ecosystem size
 
-Cardano is named after Gerolamo Cardano, an influential mathematician during the Renaissance. The Cardano roadmap is made up of five major eras, each named after prominent historical figures… Byron, Shelley, Goguen, Basho and Voltaire. The eras overlap in places and there are some interdependencies as we’ll see shortly.
+- Now dozens of companies and hundreds of projects building on Cardano (too many to list). See the **Showcase** section of the **Cardano Developer Portal**.
+- _(The source text has a placeholder here: "link the latest essential cardano weekly stats". Worth adding the link yourself.)_
 
-Byron was Cardano’s initial development phase named after the romantic poet Lord Byron. This era focused on bootstrapping the network, enabling users to transact in ada, Cardano’s native cryptocurrency. Ada is named after Lord Byron’s daughter, Ada Lovelace, the 19th century mathematician and pioneering programmer. One Ada is equal to a million lovelaces. Cardano has a fixed supply of 45 billion ada. Every ada holder is incentivized to stake their ada which helps secure the network, and participate in governance. More on this later.
+### Cardano's philosophy
 
-Ada holders used the _Daedalus_ full node wallet during this era storing, sending and staking their ada on the incentivized testnet (ITN). The full node wallet was important during this bootstrapping bringing security and stability to the network. In the last few years, most people use Light wallets. A light wallet is smaller than a full node wallet and does not participate in block validation in the same way. The Light Wallet can query the blockchain but does not store the entire state of the chain. It is much faster as result, but relies on a third party to deliver (query) blockchain data.
+- Mission from the start: **improve on previous generations and build for the long term**.
+- Vitalik Buterin said Ethereum favours "more heuristic arguments as it's trying to do more faster". Cardano went with a **"first principles" peer-reviewed academic research** approach instead:
+    - rigorous processes, formal methods, mathematical specs and proofs
+    - aim: **high-assurance software**
+    - over **200 research papers** published and scrutinised at top cryptography conferences
+- **Open-source, patent-free**: research papers, formal specs and code repos are available to all. Anyone with the right technical skills can check the claims.
+- Other projects have borrowed heavily from IOG's research in their protocol design.
+- Unlike the many projects that are just forks of existing blockchains, much of Cardano is **custom built from first principles**.
 
-Shelley, named after Percy Shelley, another prominent romantic poet, was the decentralization phase that introduced stake pools to increase Cardano's security and scalability. Users were now able to earn rewards for staking their ada to these pools. On March 31st of 2021, Cardano hit a milestone, as block production became fully decentralized. On that day, stake pool operators (SPOs) began producing 100% of new blocks. The ‘d’ (decentralization) parameter was subsequently retired, which made the network irreversibly decentralized. There are currently over 3,000 active pools that are supporting Cardano’s decentralization, with over 60% of ada staked, making it one of the most decentralized cryptocurrencies.
+### Three key areas for mass adoption
 
-The Goguen era, named after the American computer scientist and academic, Joseph Goguen, introduced programmability with smart contract functionality. Developers could now create decentralized applications, or dApps as we’ll refer to them from here on. The Plutus Platform was introduced, which facilitates smart contracts written in Haskell to guarantee deterministic outputs. Goguen also saw improvements to the core Cardano offering most significantly the addition of a multi-asset ledger, which further enabled users to create (mint) new natively supported tokens. This allows for the creation of fungible and non-fungible tokens, supporting the creation of new digital assets on Cardano, as well as the tokenization of many types of physical assets.
+**1. Scalability**
 
-The Basho era, which focuses on scalability, was named after Matsuo Basho, a famous Japanese poet. This era also focuses on improving the interoperability of the network. Basho is about boosting performance of the Cardano network to better support mass adoption as transaction volumes increase, and dApps require more resources.
+- Bitcoin and Ethereum were landmark achievements but both have shortcomings.
+- Bitcoin: only **7 transactions per second**.
+- Ethereum: struggles with demand. At a certain capacity, system bloat sets in, performance becomes unpredictable and fees spike intermittently. The same transaction can cost different gas fees depending on demand.
+- Cardano wants to fix this and mirror protocols like **BitTorrent**, where performance **scales as new users join**.
 
-Finally, the _Age of Voltaire_ is the governance era, named after Voltaire, the renowned French philosopher. To date, Cardano has used Cardano Improvement Proposals as a vehicle to manage change, as well as Project Catalyst which serves an innovation fund through which ada holders can propose ideas, vote and receive funding. The Voltaire era brought voting and other governance mechanisms completely on-chain. More about this ambitious vision later.
+**2. Interoperability**
 
-Although these eras appear sequentially on the roadmap, the development of some eras is taking place in parallel. For example, although we are currently in the _Age of Voltaire_, crucial scalability solutions like ‘input endorsers' will only be introduced after an on-chain vote as they will require a significant change to the existing protocol.
+- Mobile devices only work because of layers of interoperability standards:
+    - **GSM** (Global System for Mobile Communications): lets phones talk across networks and jurisdictions
+    - **Wi-Fi** standard: connectivity and faster speeds
+    - **TCP/IP**: suite of protocols letting computers communicate on the internet
+- The future of blockchain is **multi-chain**; many dApps and tokens already operate cross-chain.
+- Cardano has multiple solutions moving from research papers to full implementation.
 
-A **big differentiator for Cardano** is that upgrades are seamless. With most blockchains, upgrades are done via hard forks which are traumatic for the blockchains community. Typically the existing protocol is disabled, new rules are introduced, and the chain is restarted with all the history destroyed. Hard forks are handled very differently by Cardano. Rather than making drastic changes, the Cardano hard fork combinator (HFC) allows for a seamless transition to a new protocol while preserving the history of blocks and causing minimal inconvenience to users.
+**3. Governance** (sometimes called sustainability)
 
-The **hard fork combinator** is intended to allow the integration of many protocols without requiring major changes. Byron and Shelley era blocks have previously been combined in the Cardano blockchain. For future ‘hard fork events’, Basho and Voltaire blocks will be combined as well - all as a single property. The (HFC) hard fork combinator continues to prove itself with more gradual, iterative upgrades planned. These events result in negligible, if any, user disruption.
+- Bitcoin and Ethereum have both hit problems scaling because they have **no decision-making mechanisms to manage change**.
+- With millions of users, it's not viable or healthy for a small **"one pizza" core team** to dictate outcomes.
+- Can lead to traumatic splits, e.g. Bitcoin's **"Big blocks versus SegWit"** debate, which ended in a hard fork creating **Bitcoin Cash and Bitcoin**.
+- Governance isn't a sexy topic but is arguably essential for a blockchain to last. Open questions:
+    - How do we decide on an important parameter change?
+    - What happens when quantum computers arrive?
+    - How does a fledgling decentralized protocol decide on a roadmap?
+- **Funding:** money has to come from somewhere for startups to breathe.
+- **Tragedy of the commons:** users agree essential infrastructure and critical updates are needed, but there's no mechanism to apply for or approve development funding.
+- **Cardano's answer:**
+    - Community sustains development by submitting and voting on funding proposals in **Project Catalyst**.
+    - Community controls the **treasury**, which is regularly topped up from various sources.
+    - Clear plan for **end-to-end on-chain governance**.
 
-**What is Ouroboros?**
+---
 
-In Greek mythology, Ouroboros is a circular symbol depicting a snake swallowing its tail, representing wholeness or infinity of time flowing back into itself in an eternal cycle of life, death and rebirth. So what is the connection with all this philosophical talk and the proof of stake consensus protocol that powers Cardano? In a blockchain context, Ouroboros represents the protocol constantly feeding itself from previous epochs, and regenerating, kind of like eating its own tail.
+## 2. Cardano Development Milestones
 
-Ouroboros, the first provably secure proof-of-stake protocol, is just one example of Cardano’s meticulous peer-reviewed approach. Ouroboros offers the same strict security guarantees as proof-of-work blockchains such as Bitcoin. It is based on sound foundational research papers which found Ouroboros to be more robust and adaptive to attacks than previous Byzantine fault tolerant (BFT) protocols.
+- Named after **Gerolamo Cardano**, an influential Renaissance mathematician.
+- The roadmap has **five major eras**, each named after a historical figure: **Byron, Shelley, Goguen, Basho, Voltaire**.
+- Eras overlap in places and have some interdependencies.
 
-Nakamoto Consensus, named after the pseudonymous Satoshi Nakamoto, combines Proof-of-Work with the 'longest chain' rule. Ouroboros achieves **nakamoto-style consensus** but is based on proof of stake, achieving the robustness of Bitcoin, but is magnitudes more energy efficient, faster and with a fairer rewards system. Cardano is built on an innovative game theoretic design which discourages one entity gaining too much control, and avoids plutocracy.
+|Era|Named after|Focus|
+|---|---|---|
+|**Byron**|Lord Byron (romantic poet)|Bootstrapping the network, transacting in ada|
+|**Shelley**|Percy Shelley (romantic poet)|Decentralization, stake pools|
+|**Goguen**|Joseph Goguen (American computer scientist/academic)|Smart contracts, multi-asset ledger|
+|**Basho**|Matsuo Basho (Japanese poet)|Scalability, interoperability|
+|**Voltaire**|Voltaire (French philosopher)|On-chain governance|
 
-Time is measured on Cardano in epochs and slots. An epoch is a sequence of a fixed number of slots, currently lasting for five days. For each slot, stake pools who are randomly chosen to be the ‘slot leader’ to produce one or more blocks. Blocks are then propagated to the network within the allocated slot time. There is a reliable randomness in the selection of slot leaders, crucial in preventing network attacks while also incentivizing honest stakeholders. In Ouroboros, randomness is generated by using a Verifiable Random Function, a major cryptographic breakthrough in 1999 and still used widely today to produce a random output, with a proof that anyone can use to verify the result. When reviewing a stake pool's performance, it’s best to zoom out and note that it will generally receive more slots in some epochs, and fewer slots in others, but will average out over in the longer term.
+### Byron
 
-Cardano’s rigorous scientific approach and proven track record make it a reliable foundation for enterprise-grade blockchain solutions. To date, Cardano has achieved 100% uptime, second only to Bitcoin which launched years before. This is not always the case with other chains where hacks, outages and restarts are well documented.
+- Initial development phase. Focus: **bootstrapping the network** so users could transact in **ada**.
+- **Ada** is named after Lord Byron's daughter **Ada Lovelace** (19th century mathematician and pioneering programmer).
+- **1 ada = 1 million lovelaces.**
+- **Fixed supply: 45 billion ada.**
+- Every ada holder is incentivized to **stake** their ada, which helps secure the network, and to take part in governance (more later).
+- Holders used the **Daedalus** full node wallet to store, send and stake ada on the **incentivized testnet (ITN)**.
+- The full node wallet was important for bringing security and stability during bootstrapping.
+- **Light wallets** (most people use these now):
+    - Smaller than a full node wallet; doesn't take part in block validation in the same way.
+    - Can query the blockchain but doesn't store the entire chain state.
+    - Much faster, but relies on a **third party** to deliver (query) blockchain data.
 
+### Shelley
 
+- **Decentralization** phase. Introduced **stake pools** to boost Cardano's security and scalability. Users could now earn rewards by staking ada to pools.
+- **31 March 2021**: block production became **fully decentralized**. Stake pool operators (SPOs) began producing **100% of new blocks**.
+- The **"d" (decentralization) parameter** was later retired, making the network **irreversibly decentralized**.
+- Currently **3,000+ active pools**, with **over 60% of ada staked**. One of the most decentralized cryptocurrencies.
 
-Cardano is a proof-of-stake blockchain that requires a fraction of the power required for proof-of-work blockchains. According to the Cambridge Bitcoin Electricity Consumption Index, the hardware that runs Bitcoin uses as much energy each year as a country such as Norway or Sweden. Cardano's ethos is to be as inclusive as possible with a low barrier to entry. Cardano stake pools have been run on Rock Pi as far back as 2019.
+### Goguen
 
-What is staking? Staking is crucial to securing the network. It is the process where ada holders delegate to their funds to a stake pool and earn staking rewards in return. Any ada holder can run their own node which acts as a validator, processing transactions and adding new blocks to the chain. On Cardano, these are known as stake pool operators. The more ada staked, the stronger the network becomes. Stake pools receive rewards after each epoch, some of which are passed onto delegators. When you delegate your ada, your stake becomes active two epochs later. You will then start receiving rewards directly into your wallet every five days thereafter, hence staking rewards are often referred to as ‘passive income’.
+- Introduced **programmability** and smart contracts. Developers could now build **dApps**.
+- **Plutus Platform** introduced: smart contracts written in **Haskell** to guarantee **deterministic outputs**.
+- Core improvements, most significantly the **multi-asset ledger**, which lets users **mint new natively supported tokens**.
+    - Supports fungible and non-fungible tokens.
+    - Enables new digital assets on Cardano and **tokenization of many types of physical assets**.
 
-​​Ouroboros provides a ‘best in class’ staking experience. There are no penalties such as ‘slashing’ where some, or all, of your stake can be revoked as punishment for dishonest behaviour. There are no lock-up (bonding) periods. Rewards are distributed automatically every epoch and your funds are always accessible any time. Staking on Cardano is described as non-custodial, meaning you have sole custody of your ada, and you alone are responsible for securing your wallet. When you delegate your ada, your stake is never at risk of being taken by the stake pool operator, or a third party. This is not always the case with other proof of stake blockchains.
+### Basho
 
-Cardano’s network is very decentralized with over 3,000 globally distributed stake pools. Cardano’s architecture is designed to prevent centralization by using economic incentives that stimulate decentralization. Stake pools naturally want to expand as much as possible, the more delegated stake they attract, the more blocks they would produce. The network is configured to prevent single stake pools from becoming too large. There are a number of parameters that aim to find the optimum balance of stake delegated to an ideal number of stake pools.
+- Focus: **scalability** and **interoperability**.
+- About boosting network performance to support mass adoption as transaction volumes grow and dApps need more resources.
 
-At a high level, the protocol works by ensuring that if a pool attracts more delegated stake than a given threshold, the pool’s payout will fall accordingly. If a pool is said to be saturated in this way, attracting more delegated stake will no longer increase the rewards. The ideal result is a set number of stake pools of approximately equal size. It rarely ends up this way exactly in practice, but it is sufficient motivation for most participants to behave in an honest fashion out of their own self-interest to maximize their rewards. Note nobody’s stake is ever revoked, but you may not be earning full rewards if you try to game the system.
+### Voltaire (the governance era)
 
-Before we go, we should point out that stake pool operators (SPOs) are the backbone of the Cardano network. The nodes (servers) they run add blocks to the network and validate transactions. A stake pool operator maintains hardware that facilitates the Cardano blockchain and is rewarded accordingly based on stake in the network and pool performance. Staking on Cardano has a very high participation rate compared to other chains. Cardano leverages the successful stake pool model to implement some of the interoperability and governance features we’ll talk about shortly. SPOs essentially become infrastructure providers for rolling out new features released in new node versions.
+- Until now Cardano has used **Cardano Improvement Proposals (CIPs)** to manage change, plus **Project Catalyst** (an innovation fund where ada holders propose ideas, vote and receive funding).
+- Voltaire brings **voting and other governance mechanisms completely on-chain** (more later).
 
+### Eras run in parallel
 
-Businesses need some form of balance sheet to maintain an accurate record of cash in, cash out, profit, and other key metrics. Ledgers have been used in double-entry bookkeeping since the 13th century. Blockchain introduced the notion of a shared distributed ledger, an immutable record of all transactions. To achieve this, blockchain networks need an accounting model to record who owns which coins, as well as to identify which ones are spent and unspent. Let’s review the two most common blockchain accounting models and how Cardano has innovated further with the eUTxO model.
+- Although they look sequential on the roadmap, some are developed in parallel.
+- Example: we're currently in the Age of Voltaire, but key scalability solutions like **"input endorsers"** will only come in after an **on-chain vote**, since they need a significant protocol change.
 
-A bank’s book keeping model is often used to explain how the account model works. Your balance is a single figure, updated whenever you deposit or withdraw funds. This is analogous to the blockchain account model, where your blockchain address holds a single balance that fluctuates with transactions. Transactions are recorded as debits and credits on different users' accounts on the bank's ledger.
+### Seamless upgrades: the Hard Fork Combinator (HFC)
 
-Account-based blockchains work similarly, except the ledger that records its users’ balances is distributed among many nodes on the network. Note that account-based blockchains track updates to balances, not the actual coins, and balances are stored as a global state, kept by each node and updated with every transaction. The account-based model is a popular blockchain bookkeeping method. Initially introduced with Ethereum, the account model is used today by many other blockchains, such as Algorand, to record transactions and track state changes.
+- **Big differentiator.** On most blockchains upgrades happen via **hard forks**, which are traumatic for the community: existing protocol disabled, new rules introduced, chain restarted with all history destroyed.
+- Cardano does it differently. The **HFC** allows a seamless transition to a new protocol while **preserving block history** and causing minimal inconvenience.
+- Designed to integrate many protocols without major changes.
+    - **Byron and Shelley** era blocks have already been combined in the Cardano blockchain.
+    - For future hard fork events, **Basho and Voltaire** blocks will be combined too, all as a single property.
+- HFC keeps proving itself, with more gradual, iterative upgrades planned. Negligible, if any, user disruption.
 
-An alternative model is UTXO which stands for unspent transaction output. It’s often explained with ‘cash in, cash out’ analogies. Imagine you're in a book shop, buying goods with physical notes and coins. Every transaction involves handing over specific notes and coins, and your balance reflects the money you have left. This is akin to the UTXO model in blockchains, where individual notes and coins (UTXOs) are tracked to represent your balance. Bitcoin uses the UTXO model.
+---
 
-Cardano adds programmability to Bitcoin’s proven UTXO model with its extended UTXO (eUTXO) ledger model where smart contracts allow developers to build dApps with custom logic, while still maintaining security. With eUTXO, metadata and scripts are bundled together in a single transaction for greater throughput. Transaction verification is simpler, so you can predict what’s going to happen, including how much a transaction will cost. Transactions can be verified locally off-chain, and there is no dependence on the rest of the network. A developer can focus on the transaction itself, and its inputs. Unlike Ethereum, if a transaction fails, no fee is charged.
+## 3. What is Ouroboros?
 
-Crucially, Cardano's eutxo model can process multiple transactions from a single transaction. This changes the entire context for metrics like transactions per second. Users can also send multiple assets to several wallets in a single transaction, thus cutting transaction fees even more. We will look at this ‘transactions per transaction’ concept closely in a future video.
+### The name
 
+- In Greek mythology, **Ouroboros** is a circular symbol of a snake swallowing its tail: wholeness or infinity of time flowing back into itself in an eternal cycle of life, death and rebirth.
+- In blockchain terms: the protocol **constantly feeds itself from previous epochs and regenerates**, like eating its own tail.
 
-Plutus and Marlowe were the main programming languages for Cardano in the early years:
+### What it is
 
-Plutus is a platform providing the supporting infrastructure and tools for writing smart contracts in Haskell. ‘Plutus’ and ‘Haskell’ are often used interchangeably. If you hear someone saying ‘it's coded in Plutus’, they really mean they are coding in Haskell using the Plutus Framework. To be specific, the Plutus Framework enables developers to create dApps which interact with a distributed ledger featuring scripting capabilities. It’s not just a language, it’s an entire platform that supports dApp development in its entirety, end-to-end from writing scripts, to testing, runtime support, and verification.
+- **First provably secure proof-of-stake protocol.** One example of Cardano's meticulous peer-reviewed approach.
+- Same strict security guarantees as proof-of-work chains like Bitcoin.
+- Based on foundational research papers which found it **more robust and adaptive to attacks than previous Byzantine fault tolerant (BFT) protocols**.
+- **Nakamoto Consensus** (after Satoshi) = Proof-of-Work + the "longest chain" rule.
+- Ouroboros achieves **Nakamoto-style consensus** but with proof of stake:
+    - Bitcoin-level robustness
+    - **magnitudes more energy efficient**
+    - **faster**
+    - **fairer rewards system**
+- Built on an innovative **game theoretic design** that discourages one entity gaining too much control and avoids **plutocracy**.
 
-Plutus is a platform made of 3 main components:
+### Epochs and slots
 
-- Untyped Plutus Core (UPLC) is the 'machine code' for the Cardano ledger
-- PlutusTx is a plugin for compiling Haskell into UPLC to form the on-chain component.
-- Plutus Application Framework is the collection of tools for writing smart contracts in Haskell
+- Time on Cardano is measured in **epochs and slots**.
+- An **epoch** = a fixed number of slots, currently lasting **5 days**.
+- For each slot, stake pools are randomly chosen as the **slot leader** to produce one or more blocks. Blocks are propagated to the network within the allocated slot time.
+- Reliable randomness in slot leader selection is crucial: prevents network attacks and incentivizes honest stakeholders.
+- Randomness comes from a **Verifiable Random Function (VRF)**: a major cryptographic breakthrough in **1999**, still widely used. It produces a random output with a proof anyone can use to verify the result.
+- When judging a stake pool's performance, zoom out: it'll get more slots in some epochs and fewer in others, but it **averages out over the longer term**.
 
-It is said that to become a proficient developer on Cardano, one must understand three key concepts:
+### Reliability
 
-- The Extended Unspent Transaction Output (eUTXO) model
-- On-chain code, Plutus Core, which runs on the blockchain
-- Off-chain code which runs on the user’s device.
+- Rigorous scientific approach plus proven track record makes Cardano a reliable base for **enterprise-grade** solutions.
+- **100% uptime**, second only to Bitcoin (which launched years earlier). Other chains have well-documented hacks, outages and restarts.
 
-Marlowe is a simple programming language for writing financial smart contracts for Cardano. It is named after the Elizabethan poet, dramatist and spy, Christopher Marlowe. Marlowe is limited to financial applications and is not Turing-complete. It is DSL (Domain specific language) for people who are experts in finance rather than programming. You can code in Marlowe directly, or also utilize Blockly, a visual programming tool that allows you to design contracts by dragging and dropping connecting blocks that represent the various components.
+### Energy use
 
-It’s important to emphasise that you do not need to know Haskell to write smart contracts on Cardano. Let’s zoom out for a moment, to understand the bigger picture. As we mentioned, Haskell programs, coded on the Plutus Platform, compile to Untyped Plutus Core (UPLC) and while the Cardano ledger only understands Plutus Core, this low-level machine language is not something developers code in day to day. You can choose from a growing list of high-level languages which compile to UPLC.
+- PoS needs a fraction of the power of PoW.
+- **Cambridge Bitcoin Electricity Consumption Index**: the hardware running Bitcoin uses as much energy per year as a country like **Norway or Sweden**.
+- Cardano's ethos: be as inclusive as possible, low barrier to entry. Stake pools have been run on a **Rock Pi** as far back as **2019**.
 
-Developers crave flexibility to use their favourite language for what is typically the largest part of their dApp, the off-chain component. So although Cardano is implemented in Haskell, it is UPLC that is actually executed. There is no dependency or reliance on Haskell. Other languages can compile to UPLC too. One of those is Aiken.
+---
 
-Named after the mathematician Howard Aiken, it is a functional domain-specific language (DSL) written in Rust and released under an open source licence. Unlike Haskell, it is built specifically with the Cardano blockchain in mind. It places an emphasis on the developer experience and comes with ‘batteries included’ state-of-the-art tooling, taking inspiration from modern programming languages like Rust, Elm and Gleam.
+## 4. Staking on Cardano
 
-Aiken is a lean language which aims to free itself from unnecessary features and instead provide a comprehensive opinionated solution with minimal configuration needed. Everything works out-of-the-box and with language-wide standards enforced by the compiler. Developers have remarked how Aiken is easy to learn and getting started takes just a few minutes. Aiken adopts a ‘keep it simple’ approach. Compared to other languages, Aiken scripts, by design, do not support as many features as general purpose Turing-complete languages. Aiken is a small language, not a high-level general-purpose language, designed meticulously to produce small, efficient scripts for on-chain Cardano smart contracts that integrate with most languages off-chain. ‘Aiken users exhibit a tendency for Rust in off-chain scenarios’ according to the findings of the State of the Cardano Developer Ecosystem 2023 survey.
+### What is staking?
 
-Aiken has garnered praise from developers for its Rust-like syntax which retains the strengths of Haskell, as a functional language in its own right. Many developers have reported substantial performance gains with faster, more efficient smart contracts. Aiken’s thoughtful design supports blueprint stub generation, which are effectively templates for different programming languages, facilitating an effortless integration between Aiken and off-chain components.
+- Crucial for securing the network. **Ada holders delegate their funds to a stake pool and earn staking rewards.**
+- Any ada holder can run their own node, which acts as a validator (processes transactions, adds blocks). These operators are **stake pool operators (SPOs)**.
+- More ada staked = stronger network.
+- Pools get rewards **after each epoch**, and some is passed on to delegators.
+- **Timing:** when you delegate, your stake becomes **active two epochs later**. After that, rewards go **straight into your wallet every 5 days**. Hence staking rewards are often called **"passive income"**.
 
-There are other programming options we should mention:
+### Why Ouroboros staking is "best in class"
 
-Helios is another Domain Specific Language (DSL) that compiles to Plutus-Core. It is a new language built from the ground up with Cardano in mind. Helios is also a functional language but is very similar to TypeScript.
+- **No slashing** (no losing some or all of your stake as punishment for dishonest behaviour).
+- **No lock-up (bonding) periods.**
+- Rewards distributed automatically every epoch; **funds always accessible**.
+- **Non-custodial**: you have sole custody of your ada and you alone are responsible for securing your wallet.
+- Your stake is **never at risk** of being taken by the SPO or a third party. (Not always true on other PoS chains.)
 
-OpShin is an implementation of Cardano smart contracts written in a strict subset of Python. It enables you to write smart contracts in completely valid, albeit restricted Python3.
+### Decentralization by design
 
-Plutarch is a typed eDSL (embedded domain specific language) in Haskell for writing efficient Plutus Core validators. It is not a new language, it’s just good old Haskell with no restrictions.
+- **3,000+ globally distributed stake pools.**
+- Architecture uses **economic incentives** to stimulate decentralization.
+- Pools naturally want to grow: more delegated stake = more blocks produced.
+- The network is configured to stop single pools getting too big. Several parameters aim to find the best balance of stake across an ideal number of pools.
+- **Saturation:** if a pool attracts more delegated stake than a given threshold, its payout falls. Once saturated, more delegated stake **no longer increases rewards**.
+- Ideal outcome: a set number of pools of roughly equal size. Rarely exactly achieved, but enough to motivate most people to act honestly out of self-interest (to maximise rewards).
+- Nobody's stake is ever revoked, but you might not earn full rewards if you try to game the system.
 
-plu-ts is a library to enable Cardano-related software to be written entirely in TypeScript.
+### SPOs are the backbone
 
-Scalus is a Scala implementation of Plutus.
+- Their nodes (servers) add blocks and validate transactions.
+- An SPO maintains the hardware behind the blockchain and is rewarded based on **stake in the network and pool performance**.
+- Staking participation on Cardano is very high compared with other chains.
+- Cardano uses the stake pool model to deliver some interoperability and governance features (coming up). SPOs effectively become **infrastructure providers** for rolling out new features released in new node versions.
 
-Unlike many blockchains who adopt a ‘move fast and break things’ approach, Cardano has always stuck to a deliberate, careful and methodical strategy. Despite this relative conservatism, Cardano’s GitHub repositories have been very active in 2021, 2022 and again in 2023.
+---
 
-As adoption grows, there are more and more options for newcomers. Acknowledging that Java is still the preferred language for many enterprise developers, the Cardano Foundation has written various tools and services in Java, and released them under an open source licence to encourage collaborations and community contributions. For example, the Identity Wallet is a W3C-compatible mobile wallet for managing self-sovereign identities across Cardano and other blockchains. The wallet supports multiple standards, integrating key event receipt infrastructure (KERI) for interoperability so as to fit a broad range of use cases and foster enterprise adoption.
+## 5. Accounting models: Account vs UTXO vs eUTXO
+
+### Background
+
+- Businesses need a balance sheet to keep an accurate record of cash in/out, profit and other key metrics. Ledgers have been used in **double-entry bookkeeping since the 13th century**.
+- Blockchain introduced the **shared distributed ledger**: an immutable record of all transactions.
+- Networks need an accounting model to record who owns which coins and which are spent/unspent.
+
+### Account model
+
+- Explained with a bank: your balance is a single figure, updated on deposits and withdrawals. Transactions are debits and credits on different users' accounts.
+- Account-based blockchains work the same way, except the ledger is **distributed across many nodes**.
+- They track **updates to balances, not the actual coins**. Balances are stored as a **global state**, kept by each node and updated with every transaction.
+- Popular model. First introduced with **Ethereum**; also used by others such as **Algorand**.
+
+### UTXO model (unspent transaction output)
+
+- "Cash in, cash out" analogy: at a book shop, paying with physical notes and coins. Each purchase hands over specific notes and coins, and your balance is what you have left.
+- In blockchain, individual notes and coins (**UTXOs**) are tracked to represent your balance.
+- **Bitcoin** uses UTXO.
+
+### eUTXO (extended UTXO), Cardano's model
+
+- Adds **programmability** to Bitcoin's proven UTXO model. Smart contracts let developers build dApps with custom logic while keeping security.
+- **Metadata and scripts are bundled together in a single transaction** for greater throughput.
+- Transaction verification is simpler, so you can **predict the outcome, including the cost**.
+- Transactions can be verified **locally, off-chain**, with no dependence on the rest of the network. Developers can focus on the transaction and its inputs.
+- **Failed transactions are not charged a fee** (unlike Ethereum).
+- Can process **multiple transactions from a single transaction**, which changes the context for metrics like transactions per second.
+- Users can send **multiple assets to several wallets in one transaction**, cutting fees further.
+- _"Transactions per transaction" concept to be covered in a future video._
+
+---
+
+## 6. Programming on Cardano
+
+Plutus and Marlowe were the main languages in the early years.
+
+### Plutus
+
+- A **platform** providing infrastructure and tools for writing smart contracts in **Haskell**. "Plutus" and "Haskell" are often used interchangeably. "Coded in Plutus" really means coding in Haskell using the Plutus Framework.
+- The Plutus Framework lets developers create dApps that interact with a distributed ledger with scripting capabilities.
+- More than a language: supports dApp development **end to end** (writing scripts, testing, runtime support, verification).
+- **Three main components:**
+    - **Untyped Plutus Core (UPLC)**: the "machine code" of the Cardano ledger
+    - **PlutusTx**: plugin that compiles Haskell into UPLC (the on-chain component)
+    - **Plutus Application Framework**: tools for writing smart contracts in Haskell
+- **Three key concepts** to become a proficient Cardano developer:
+    - the eUTXO model
+    - **on-chain code** (Plutus Core), which runs on the blockchain
+    - **off-chain code**, which runs on the user's device
+
+### Marlowe
+
+- Simple language for writing **financial smart contracts** on Cardano.
+- Named after Elizabethan poet, dramatist and spy **Christopher Marlowe**.
+- Limited to financial applications; **not Turing-complete**.
+- A **DSL (domain-specific language)** for finance experts rather than programmers.
+- Can code in Marlowe directly or use **Blockly**, a visual drag-and-drop tool that connects blocks representing the contract's components.
+
+### You don't need Haskell
+
+- Haskell programs on the Plutus platform compile to UPLC. The ledger only understands Plutus Core, but devs don't write that low-level language day to day.
+- A growing list of **high-level languages compile to UPLC**.
+- Developers want to use their favourite language, especially for the off-chain part (typically the biggest part of a dApp).
+- Cardano is implemented in Haskell, but **UPLC is what actually executes**, so there's no reliance on Haskell.
+
+### Aiken
+
+- Named after mathematician **Howard Aiken**.
+- A **functional DSL written in Rust**, open source.
+- Unlike Haskell, built specifically for Cardano. Emphasis on **developer experience**, with "batteries included" state-of-the-art tooling. Inspired by modern languages like **Rust, Elm and Gleam**.
+- Lean, opinionated, minimal configuration. Works out of the box; language-wide standards enforced by the compiler.
+- Developers say it's easy to learn and you can get started in minutes. "Keep it simple" approach.
+- By design, scripts support fewer features than general-purpose Turing-complete languages. It's a small language (not a high-level general-purpose one) built to produce **small, efficient on-chain scripts** that integrate with most languages off-chain.
+- **State of the Cardano Developer Ecosystem 2023** survey: "Aiken users exhibit a tendency for Rust in off-chain scenarios."
+- Praised for **Rust-like syntax** while keeping Haskell's strengths as a functional language. Many devs report big performance gains (faster, more efficient contracts).
+- Supports **blueprint stub generation** (templates for different programming languages), making integration with off-chain components easy.
+
+### Other options
+
+|Tool|What it is|
+|---|---|
+|**Helios**|DSL compiling to Plutus Core. Built from the ground up for Cardano. Functional, very similar to **TypeScript**.|
+|**OpShin**|Cardano smart contracts in a strict subset of **Python** (valid but restricted Python3).|
+|**Plutarch**|Typed **eDSL (embedded DSL) in Haskell** for efficient Plutus Core validators. Not a new language: plain Haskell, no restrictions.|
+|**plu-ts**|Library for writing Cardano software entirely in **TypeScript**.|
+|**Scalus**|**Scala** implementation of Plutus.|
+
+### Development culture and enterprise tooling
+
+- Unlike chains that "move fast and break things", Cardano sticks to a deliberate, careful, methodical strategy. Despite this relative conservatism, its **GitHub repos were very active in 2021, 2022 and 2023**.
+- More options for newcomers as adoption grows. Java is still the favourite for many enterprise developers, so the **Cardano Foundation** has written tools and services in **Java** and released them open source to encourage collaboration.
+- Example: the **Identity Wallet**, a **W3C-compatible** mobile wallet for managing **self-sovereign identities** across Cardano and other blockchains. Supports multiple standards and integrates **KERI (key event receipt infrastructure)** for interoperability, fitting a broad range of use cases and encouraging enterprise adoption.
+
+---
+
+## Quick reference: key terms
+
+- **IOG**: Input Output Global, development/science arm.
+- **CF**: Cardano Foundation (Zug), brand custodian.
+- **Emurgo**: commercial arm (Asia/Africa), Yoroi wallet.
+- **Ada / lovelace**: 1 ada = 1,000,000 lovelaces; supply 45 billion.
+- **Byron / Shelley / Goguen / Basho / Voltaire**: the five eras.
+- **ITN**: incentivized testnet.
+- **Daedalus**: full node wallet. **Light wallet**: fast but depends on a third party for data.
+- **HFC**: Hard Fork Combinator, seamless upgrades that preserve history.
+- **Ouroboros**: first provably secure PoS protocol.
+- **Epoch**: 5 days (fixed number of slots). **Slot leader**: pool picked to make blocks for a slot.
+- **VRF**: Verifiable Random Function (1999).
+- **SPO**: stake pool operator.
+- **Saturation**: point where extra delegation stops raising a pool's rewards.
+- **eUTXO**: extended UTXO, with scripts and metadata in one transaction.
+- **UPLC**: Untyped Plutus Core, the ledger's "machine code".
+- **Plutus / Marlowe / Aiken / Helios / OpShin / Plutarch / plu-ts / Scalus**: smart contract languages and tools.
+- **Project Catalyst**: community innovation fund. **CIPs**: Cardano Improvement Proposals.

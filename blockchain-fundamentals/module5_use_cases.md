@@ -1,159 +1,305 @@
-For the rest of the course, we’ll focus on the business side of things, listing the types of use cases blockchain enables and some of the business models which have sprung up. By the end, you should be able to conclude if blockchain is the right fit for your business.
+# Benefits, Decision Frameworks and Use Cases
 
-Blockchain has the following benefits for business:
+The rest of the course focuses on the business side: the types of use cases blockchain enables and some of the business models that have come out of it. The aim is that by the end you can decide whether blockchain is the right fit for your business.
 
-**Transaction times**: Compared to traditional inter-bank transfers, Cardano has demonstrated it can transfer thousands of digital assets to multiple recipients globally and settled in minutes, for minimal fees. There is no verification required from a central authority or clearing house.
+---
 
-**Cost savings**: A blockchain network reduces expenses in several ways: • The network is self-policed by network participants through ‘inclusive accountability’. • ‘Killing the middleman’ as intermediaries are no longer required. Participants exchange value directly. • Duplication of effort is eliminated because the shared ledger provides a single source of truth.
+## 1. Benefits of blockchain for business
 
-**Security**: Blockchain inherently protects against interference, fraud, and hacking.
+- **Transaction times**
+    - Compared with traditional inter-bank transfers, Cardano has shown it can send **thousands of digital assets to multiple recipients globally, settled in minutes, for minimal fees**.
+    - No verification needed from a central authority or clearing house.
+- **Cost savings**
+    - Network is **self-policed** by participants through "inclusive accountability".
+    - **"Killing the middleman"**: no intermediaries, participants exchange value directly.
+    - **No duplicated effort**, because the shared ledger is a single source of truth.
+- **Security**: blockchain inherently protects against interference, fraud and hacking.
+- **Privacy**
+    - The **Cardano Foundation** offers a **digital identity wallet** prioritizing security, privacy and interoperability, to drive adoption and support existing ecosystems.
+    - Users can securely generate, update, deactivate and restore **Decentralized Identifiers (DIDs)** and **KERI Autonomic Identifiers (AIDs)** (KERI = Key Event Receipt Infrastructure).
+    - **Zero knowledge proofs** and other cryptographic primitives allow **selective disclosure** and other advanced privacy features.
+- **Auditability**: a shared public ledger gives a **"single pane of glass"** for monitoring and auditing transactions.
+- **Operational efficiency**
+    - Cryptocurrencies and their blockchains run **24/7**, with no "business days" or public holidays.
+    - **Tokenization** of assets allows near-instant transfer of ownership.
+- **Smart contracts for business terms and conditions**: can be written to be **self-executing and self-enforcing**, which is more secure and efficient than paper contracts.
 
-**Privacy**: The Cardano Foundation offers a digital identity wallet that prioritizes security, privacy, and interoperability to drive adoption and support existing ecosystems. Users can securely generate, update, deactivate, and restore Decentralized Identifiers (DIDs) and KERI (Key Event Receipt Infrastructure) Autonomic Identifiers (AIDs). Zero Knowledge proofs and other cryptographic primitives enable selective disclosure and other advanced privacy capabilities.
+### Permissioned vs permissionless
 
-Blockchains can be **permissioned or permissionless**. Some companies use permissioned blockchains to achieve privacy. Permissioned blockchain provides each participant with a unique identity, enabling the use of policies to restrict participation and access to sensitive details. Permissioned blockchains are adopted sometimes out of necessity to comply with data protection regulations, for example to protect medical records in accordance with the Health Insurance Portability and Accountability Act (HIPAA).
+- Blockchains can be either.
+- Some companies use **permissioned** blockchains for privacy. Each participant gets a **unique identity**, so policies can restrict participation and access to sensitive details.
+- Sometimes adopted out of necessity to meet data protection rules, e.g. protecting medical records under **HIPAA** (Health Insurance Portability and Accountability Act).
 
-**Auditability** with a shared public ledger provides a ‘single pane of glass’ for monitoring and auditing transactions.
+---
 
-**Operational efficiency**: cryptocurrencies, and the blockchains they run on, operate 24/7 with no concept of ‘business days’ or public holidays. Tokenization of assets streamlines near instant transfer of ownership.
+## 2. Is blockchain right for your business?
 
-Smart contracts can contain **business terms and conditions** that could be written in a way to be self-executing and self-enforcing. This offers more security and efficiency than traditional paper contracts.
+### Starter questions
 
+1. **Once-off or ongoing, repeatable process?** Can it be fully automated? If only partly, is it worth pursuing?
+2. **How many stakeholders?** Do they all need to be honest? E.g. is a **5-of-7 multi-signature** enough for consensus? What's the threshold?
+3. **Multiple disparate data sources?** Blockchain can help consolidate different data types and keep data consistent.
+4. **Is there a value transfer?** Can an old process be streamlined with blockchain?
+5. **Need for immutability** and permanent records?
+6. **Need for reliable performance?** E.g. Cardano fees are **deterministic**: you can predict them accurately in advance, and the same transaction won't cost different amounts at different times.
+7. **What's the right strategy: blue ocean or red ocean?**
+    - Cardano executed a **blue ocean** strategy.
+    - A **red ocean** strategy would have meant forking Bitcoin or Ethereum and competing head-on as a PoW chain.
+    - Cardano's blue ocean approach: first-principles, academic research-based. Much of it is custom built, with many industry firsts:
+        - first provably secure PoS consensus protocol (**Ouroboros**)
+        - first **liquid, non-custodial staking** model
+        - first **eUTXO accounting model at scale**
+8. **What industry are you in?** Is **ESG** (Environmental, Social and Corporate Governance) a requirement or a nice-to-have?
+9. **Have you catered for blockchain's drawbacks?**
 
-When considering if blockchain is the right solution for your business, there is much to consider. The following questions are a starting point for deeper discussions:
+### Drawbacks to be aware of
 
-1. Is the process a once off, or one that is an ongoing repeatable process? Can it be fully automated? If it can only be partially automated, is it worth pursuing?
-    
-2. How many stakeholders are involved in the process? Do they all need to be honest? For example, is a 5 of 7 multi-signature sufficient for consensus? What is the threshold?
-    
-3. Are there multiple disparate data sources? Blockchain may help consolidate different types of data and help ensure data consistency.
-    
-4. Is there a value transfer? Can an old process be streamlined with blockchain?
-    
-5. Is there a need for immutability, with permanent records?
-    
-6. Do you need reliable performance? For example, Cardano transactions fees are deterministic, meaning you can predict them accurately in advance. The same transaction will not incur different fees at different times.
-    
+- Blockchain isn't always a silver bullet.
+- **Immutability** can be frustrating when you need to correct earlier work.
+- Assets are secured with **public key cryptography**. **Lose your seed phrase and you could lose all your funds.**
+- A **10-minute settlement time** isn't great if you're selling ice cream on a hot day with a long queue.
+- There are workarounds and best practices, but know about the hiccups.
 
-7 What is the right strategy for your business? Blue ocean or red ocean? For example, Cardano successfully executed a blue ocean strategy. A red ocean strategy would have involved forking Bitcoin or Ethereum and competing directly as a proof of work blockchain. Cardano's blue ocean strategy involved taking a first principles academic research-based approach. As we discussed, much of Cardano is custom built including many industry firsts. For example, the first provably secure proof-of-stake consensus protocol, Ouroboros. The first liquid, non-custodial staking model, the first eUtxO accounting model at scale.
+### Frameworks for assessing your idea
 
-8. What industry are you in? Is ESG (Environmental, social, and corporate governance) a requirement or a ‘nice to have’?
-    
-9. Have you catered for blockchains drawbacks?
-    
+- Best to use a **mix** of frameworks.
+- **Porter's Five Forces**: five key sources of competitive pressure in an industry. Useful for weighing up your new product's competitiveness:
+    1. threat of new entrants
+    2. bargaining power of buyers
+    3. bargaining power of suppliers
+    4. threat of new substitutes
+    5. competitive rivalry
+- **SWOT analysis**: Strengths, Weaknesses, Opportunities, Threats.
+- **Gartner Hype Cycle**: graphic of a technology's maturity and adoption. Good for an emerging technology like blockchain. Where Cardano sits on it is subjective and people read the chart differently, but it can help show where real business value and opportunity are.
+- **Price and market cycles:**
+    - Many people hate focusing on price alone, but many blockchains are **intrinsically tied to their native currency**.
+    - Crypto market cycles can't be ignored. **Many businesses die each bear market** because they underestimate the swings.
+    - The famous **"Wall Street Cheat Sheet"** helps traders understand and navigate market movements. It shows the psychological side of trading, which is relatable for anyone working in the industry.
+- These are just a sample of the tools available.
 
-Blockchain technology is not always a silver bullet. For example, immutability can be frustrating when you need to make corrections to earlier work. Blockchains use public key cryptography to secure your assets. If you lose your seed phrase, you could lose your entire funds. Settlement time of ten minutes may not be ideal if you are selling ice cream on a warm day with long queues. There are workarounds and best practices to these issues, but it’s important you are aware of potential hiccups.
+---
 
-There are different frameworks for assessing solutions for your business idea. It is probably best to use a mix of frameworks to assess your use case. Porter’s Five Forces, for example, describes five key sources of competitive pressure within a given industry. You could use these to weigh up the competitiveness of your new product in the market. The five considerations are: threat of new entrants, bargaining power of buyers, bargaining power of suppliers, threat of new substitutes and competitive rivalry.
+## 3. Use cases overview
 
-You may also conduct a SWOT analysis. Considering the Strengths, Weaknesses, Opportunities, and Threats is another technique for assessing key aspects of your business.
+- Use cases are "only limited by your imagination".
+- **Deloitte and McKinsey** research suggests blockchain has use cases across **all verticals**.
+- **Gartner** predicts blockchain's business value will grow to **$176 billion by 2025** and **$3.1 trillion by 2030**.
 
-For an emerging technology like blockchain, it’s perhaps wise to review the Gartner Hype Cycle which is a graphic representation of the maturity and adoption of a technology. Views of where Cardano currently sits on the cycle are subjective, and people may interpret the chart differently but it might help with your overall strategy to understand where real business value and opportunity exist.
+### Common characteristics of use cases
 
-While many people loathe the idea of focusing on price alone, if your business depends on blockchain, then you must appreciate that many blockchains are intrinsically tied to their native currency. The nature of cryptocurrency market cycles is not something that should be ignored. Many businesses perish each bear market, underestimating the market swings. The famous ‘Wall Street Cheat Sheet’ is an aid to traders in understanding and navigating market movements. It offers some insight into the psychological aspects of trading, but perhaps relatable to anyone working in the industry.
+- **Digital scarcity**
+    - Digital assets can have fixed or variable supply.
+    - Native currencies like bitcoin and ada have **deflationary models** with rewards decreasing over time.
+    - Much of the NFT craze is fuelled by speculation on the scarcity of tokenized assets.
+- **Payment rails**: secure, efficient transfer of value.
+    - Legacy remittance infrastructure is outdated, expensive and opaque.
+    - Migrants sending money to developing countries are charged **extortionate rates**.
+    - **Credit card transactions can take up to 7 business days** to settle behind the scenes.
+    - Blockchain is faster, cheaper and transparent.
+    - Cardano's eUTXO model lets **thousands of digital assets** go to multiple recipients in one transaction. See **eutxo.org** to watch blocks being minted live.
+- **Distributed ledger (DLT)**
+    - Lets anyone track the **origin, ownership, production process, transportation and storage** of tokenized physical assets and digital assets.
+    - All without a central authority.
 
-These are just a sample of the frameworks and tools you can use to decide if Blockchain is right for your business.
+---
 
-Now we have seen how different blockchains work, what can they actually be used for? The use cases are only limited by your imagination.
+## 4. Web3
 
-Research by firms such as Deloitte and McKinsey believe blockchain has use cases across all verticals, while Gartner predicts blockchain’s business value will grow to $176 billion by 2025 and $3.1 trillion by 2030. Most use cases for blockchain feature some, or all, of the following characteristics: **Digital scarcity**: Digital assets can have a fixed or variable supply. Native currencies like bitcoin and ada have deflationary models with rewards decreasing over time. Much of the NFT craze is fueled by speculation on the scarcity of assets tokenized on-chain.
+### Web 1.0, 2.0, 3.0
 
-**Payment Rails** enable the secure and efficient transfer of value. Legacy remittance infrastructure is outdated, expensive and opaque. Migrants sending money home to developing world countries are charged extortionate rates. Credit card transactions can take up to seven business days to settle behind the scenes. Sending funds over a blockchain is faster, cheaper and transparent. For example, Cardano’s eUTxO model enables thousands of digital assets to be transferred to multiple recipients in the same transaction. See eutxo.org for visualisation of blocks being minted ‘live’.
+|Stage|Era|Description|
+|---|---|---|
+|**Web 1.0**|1990s|Static, text-based sites. Users mainly **"read"**. Like an encyclopaedia: you could search and study, but little interactivity.|
+|**Web 2.0**|1999 (term coined by **Darcy DiNucci** to distinguish from 1.0)|Interactive sites like YouTube and Facebook. Users **"read" and "write"**. Big tech subsidised the huge storage costs so users could upload content, and social media was born. User content brought reactions, and "sentiment"-based algorithms grew ever more sophisticated.|
+|**Web3**|Term introduced by **Gavin Wood** (Ethereum co-founder)|Next iteration of the internet, built around blockchain. A decentralized network where users **"read", "write" and "own"** their content, currency and digital assets.|
 
-**Distributed ledger** allows anyone to track the origin, ownership, production process, transportation, and storage of both tokenized physical assets and digital assets. Crucially, DLT, or distributed ledger technology, can do all this without the need for a central authority.
+- Web3 is somewhat of a buzzword, but the idea: blockchain "kills the middleman", and here the middlemen are **big tech companies**, whose stranglehold on user data gets removed.
 
-Blockchain technology is the foundation stone for Web3, but what is Web3? To understand the future, lets recap the past first. Web 1.0 refers to the internet's early days in the 1990s, characterised by static, text-based websites where the primary activity users did was to ‘read’. It was a little like an encyclopaedia, users could search and study topics but there was little stimulation or interactivity.
+### Examples and related ideas
 
-Web 2.0 arrived in 1999, coined by Darcy DiNucci to distinguish it from web 1.0. Web 2.0 saw the introduction of interactive websites like YouTube and Facebook. If Web 1.0 was the ‘read’ era, Web 2.0 allowed users to ‘read’ and ‘write’. The ‘big tech’ companies subsidised the huge storage expenses so users could upload content and ‘social media’ was born. User generated content would garner reactions and ‘sentiment’ based algorithms would become ever more sophisticated thereafter.
+- **Brave browser** (based on Google Chromium): protects privacy using blockchain.
+    - Most people unwittingly give away lots of data just by browsing.
+    - Brave flips the ad model by compensating for ads in its **ERC-20 token, BAT (Basic Attention Token)**.
+- **Semantic web**: computers can comprehend and use information as humans do.
+- **Content authenticity vs deep fakes:**
+    - With AI advancing so fast, blockchain may be adopted out of necessity to ensure the integrity of digital content.
+    - Possibly the biggest future use case: **verifying and authenticating digital content**.
+    - Example: a video's unique **hash** recorded on-chain. Before playing, cross-check its hash against the on-chain one.
+- **Infrastructure alternatives to big cloud providers** (less glamorous):
+    - **IPFS (Interplanetary File System)**: like a file system for the blockchain world. Store and retrieve large data sets with blockchain benefits (decentralisation, data integrity, etc.).
+    - Also **decentralised compute** offerings.
 
-It was Gavin Wood, co-founder of Ethereum, who introduced the term Web3 to describe the next iteration of the internet which would revolve around blockchain. While it has become somewhat of a buzzword bandied about, you can think of it as a decentralized network where the users now ‘read’, ‘write’ and ‘own’ their content, currency and digital assets. Blockchain is often said to ‘kill the middleman’, and in this case, the ‘big tech’ companies are the middlemen whose stranglehold on user data is removed.
+---
 
-Here is an example that might resonate with you right now depending on what browser you are using. Most people unwittingly disclose a lot of data just by surfing the web. Brave is a browser, based on Google Chromium, that protects user privacy by leveraging blockchain technology. It flips the traditional advertising model by compensating for ads in its ERC-20 token, BAT, or Basic Attention Token.
+## 5. DeFi (Decentralized Finance)
 
-Another Web3 term is ‘the semantic web’ where computers can comprehend and use information just as humans do. With the relentless advancement of AI continuing at a dizzying pace, blockchain may be adopted out of necessity to insure the integrity of digital content against deep fakes. The biggest use case for blockchain in future may be its ability to verify and authenticate digital content. For example, a video’s unique hash could be recorded on-chain. Before a video is played, its authenticity can be verified by cross checking its hash against the hash on the blockchain.
+- Arguably the **number one blockchain use case to date**.
+- **TradFi** has barriers to entry and can discriminate against the developing world. **DeFi** is more inclusive: no **KYC**, registration or minimum balances.
+- Open, transparent, decentralized alternative by removing intermediaries.
+- Users **self-custody** their assets and transact directly with anyone globally.
 
-Some of the less glamorous use cases of blockchain are infrastructure solutions that offer an alternative to the major cloud providers. For example, IPFS (Interplanetary File System) is like a file system for the blockchain world. This provides users with a place to store and retrieve large data sets with all benefits of blockchain, ie. decentralisation, data integrity, etc. There are also decentralised compute offerings.
+### History
 
+- "DeFi" was coined in **2018** by Ethereum developers who introduced smart contracts to blockchain, building on Bitcoin's **2009** breakthrough as the first peer-to-peer digital currency.
+- **ERC token standards** opened the door to NFTs and financial services such as:
+    - stablecoins
+    - decentralized exchanges
+    - lending and borrowing protocols
+    - **yield farming**: depositing tokens into a **liquidity pool** to earn rewards, paid in a native currency or sometimes the protocol's own token. Think of it as providing liquidity in return for favourable interest rates.
 
+### Growth and risks
 
-DeFi, or decentralized finance, is arguably the number one use case for blockchain to date. While TradFi has barriers to entry and can discriminate against those in the developing world, DeFi is more inclusive dispensing with the requirements for KYC, registration and minimum account balances. DeFi creates an open, transparent, and decentralized alternative by removing the various intermediaries. DeFi allows users to have self-custody of their own assets and transact directly with anyone globally.
+- DeFi has grown steadily as other chains add to **total value locked (TVL)**, tracked on sites like **DefiLlama** _(the source spells it "DefiLama")_.
+- Unregulated industry = plenty of scams. **DYOR** (do your own research).
 
-The term DeFi was coined in 2018 by ethereum developers who introduced smart contracts to the blockchain space, building on the 2009 breakthrough of Bitcoin as the first peer to peer digital currency. In addition, ERC token standards opened the door for the proliferation of NFTs and financial services like stablecoins, decentralized exchanges, lending and borrowing protocols and yield farming. Yield farming refers to depositing tokens into a liquidity pool to earn rewards, paid out in a native currency or sometimes the protocol’s own token. Think of it as providing liquidity in return for favourable interest rates.
+### CEX vs DEX
 
-The DeFi space has grown steadily since with other blockchains adding to the total value locked (TVL) on sites like DefiLama which track such metrics. As you would expect in an unregulated industry, there are plenty of scams, so DYOR, ‘do your own research’.
+- Newcomers often leave funds on **centralized exchanges (CEXs)** for convenience, but it's generally **safer to self-custody**: total control and access.
+- DeFi mostly happens on **decentralized exchanges (DEXs)**: trading through **self-executing smart contracts** and peer-to-peer transactions. No intermediaries; ada and digital assets move between users' wallets.
+- **DEXs on Cardano** use the **determinism (reliability)** of the eUTXO model.
 
-Some users, especially newcomers, tend to leave their funds on centralized exchanges (CEXs) just out of convenience, however, it is generally safer to self-custody as you have total control and access to your funds. DeFi happens mostly on decentralized exchanges (DEXs) where trading takes place via self executing smart contracts and peer to peer transactions. There are no intermediaries, ada and digital assets transfer back and forth between users’ wallets. DEXs on Cardano make use of the determinism (reliability) afforded by the eUTxO model.
+### Stablecoins
 
-A stablecoin is a fixed-price cryptocurrency which is pegged, or backed by another stable asset. Stablecoins enable instant payment and settlement of transactions but most importantly, they offer a safe haven from volatility. Stablecoins represent a stable asset regardless of how other assets fluctuate, or if a country suffers from high inflation and an unstable national currency. It’s generally accepted that stablecoins are essential for a blockchain’s DeFi ecosystem to flourish. We delve into the different kinds of stablecoins in future courses.
+- A **fixed-price cryptocurrency**, pegged to or backed by another stable asset.
+- Enable instant payment and settlement, and most importantly a **safe haven from volatility**.
+- Represent a stable asset however other assets move, or if a country has high inflation and an unstable currency.
+- Generally accepted as essential for a blockchain's DeFi ecosystem to thrive.
+- _Different kinds covered in future courses._
 
+---
 
-Tokenization is the on-chain digital representation of real world assets. Native assets, or tokens, are the smallest pieces of data on the Cardano blockchain. They are defined by three things: a name, a minting policy and an amount.
+## 6. Tokenization and tokens
 
-Just one example where tokenization offers a solution is around the diamond mining industry. Most people have heard of the story of ‘Blood diamonds’ mined in war zones and sold to finance all kinds of nefarious activity. The establishment of the Kimberley Process in 2003 is a multilateral trade regime that outlines safeguards for preventing and eliminating blood diamonds from the global supply chain. This includes some required criteria to certify diamonds are from legitimate sources. Blockchain technology is an obvious platform for such requirements. An immutable audit trail enables compliance and retailers can verify suppliers credentials.
+### Tokenization
 
-NMKR, an NFT and tokenization service, partnered with Tiamonds to bring tokenized diamonds to Cardano and also provide user-friendly plug-and-play tools for projects.
+- **Tokenization** = on-chain digital representation of real-world assets.
+- On Cardano, **native assets (tokens)** are the smallest pieces of data on the chain, defined by **three things: a name, a minting policy, and an amount**.
 
-NFTs can be used for many other different use cases in a blockchain powered digital economy. Fungible tokens can be used in a wide range of different contexts:
+### Example: diamonds
 
-- DeFi DAO tokens – for example, a utility token can be integral to a decentralized lending and borrowing protocol. Utilizing a non-custodial system, NFT-backed loans can be facilitiated, enabling users to leverage their digital assets
-- Loyalty Points to reward and incentivize readers.
-- Wrapped assets. For example, Wrapped BTC is a synthetic version of Bitcoin, represented by a token, built and deployed through a smart contract, on other blockchains.
-- Meme coins are tokens usually based on a joke, rather than real world utility.
-- Staking - Native tokens can be staked to participate in a protocol’s operation. In return users benefit from yield farming opportunities, where users can stake Liquidity Provider (LP) tokens to earn additional rewards, usually in the form of the platform’s native token.
+- "Blood diamonds" are mined in war zones and sold to fund nefarious activity.
+- The **Kimberley Process (2003)** is a multilateral trade regime with safeguards to keep blood diamonds out of the global supply chain, including criteria to certify legitimate sources.
+- Blockchain is an obvious fit: an **immutable audit trail** supports compliance and lets retailers verify suppliers' credentials.
+- **NMKR** (an NFT and tokenization service) partnered with **Tiamonds** to bring **tokenized diamonds to Cardano** and offer user-friendly plug-and-play tools for projects.
 
-NFT’s also have a wide variety of use cases:
+### Uses of fungible tokens
+
+- **DeFi DAO tokens**: e.g. a utility token integral to a decentralized lending/borrowing protocol. With a non-custodial system, **NFT-backed loans** are possible, letting users leverage their digital assets.
+- **Loyalty points** to reward and incentivize readers.
+- **Wrapped assets**: e.g. **Wrapped BTC** is a synthetic version of Bitcoin, represented by a token built and deployed through a smart contract on other blockchains.
+- **Meme coins**: tokens usually based on a joke rather than real-world utility.
+- **Staking**: native tokens can be staked to take part in a protocol's operation. Users benefit from **yield farming**: staking **Liquidity Provider (LP) tokens** to earn extra rewards, usually in the platform's native token.
+
+### Uses of NFTs
 
 - Profile pictures
 - Digital art
 - Collectibles
-- Digital Twins - a digital copy of something in the real world.
-- POAP NFTs (Proof of Attendance Protocol) shows you attended, or took part, in an event.
-- Fractional ownership of physical assets like property, fine art, etc
-- Gaming… NFTs can be used in all types of creative ways in Gaming, which segues us nicely to our next video…
+- **Digital twins**: a digital copy of something in the real world
+- **POAPs (Proof of Attendance Protocol)**: show you attended or took part in an event
+- **Fractional ownership** of physical assets like property and fine art
+- **Gaming** (next section)
 
+---
 
-While trillions of US dollars were printed in 2020 alone, many cryptocurrencies, such as bitcoin and ada, have a hard cap on their supply which creates scarcity. This scarcity can be extended to tokens and other digital assets in gaming and the metaverse. The metaverse is a 3D virtual world, built on augmented and virtual reality, and is popular for online role-playing games. McKinsey & Company predict the metaverse economy to reach $5 trillion by 2030.
+## 7. Gaming and the metaverse
 
-Markets and economies form around the creation and trading of tokens and digital assets. For example, gamers can be rewarded in-game assets for clearing stages of a game. These in-game assets can be tokens, collectibles, virtual land, NFTs, art, avatars, etc…with various levels of digital scarcity.
+- Trillions of US dollars were printed in **2020** alone, while many cryptos (bitcoin, ada) have a **hard supply cap**, creating scarcity. That scarcity extends to tokens and digital assets in gaming and the metaverse.
+- **Metaverse** = a 3D virtual world built on augmented and virtual reality, popular for online role-playing games.
+- **McKinsey & Company** predicts the metaverse economy will reach **$5 trillion by 2030**.
+- Markets form around creating and trading tokens/digital assets. E.g. gamers get in-game assets for clearing stages. These can be tokens, collectibles, virtual land, NFTs, art, avatars etc., with varying digital scarcity.
+- **GameFi** (Game Finance): many games popular with **"play to earn"** models. Players earn digital assets by hitting milestones, beating real players, or beating AI opponents. Assets can often be traded on real-world exchanges.
+- **Pay to play (Web 2.0 games):** often subscription-based. The gamer is just paying for a **licence that the studio can take away**, with no incentive around earning, collecting or trading assets.
+- Blockchain gives gamers **true ownership**.
+- Web2 games currently handle more transactions and active players than Web3 games, but the gap is closing as scaling solutions mature.
 
-New terms have entered the lexicon like ‘GameFi’, .ie. Game Finance. Many games have become wildly popular offering ‘play to earn’ models for players. They can earn various digital assets by reaching milestones, beating other real world players, or AI-generated opponents. Often these in-game assets can also be traded on real world exchanges.
+---
 
-This is a break from traditional ‘pay to play’ games which often require a subscription. This is the familiar theme throughout the old Web 2.0 gaming world where the gamer is just paying for a licence that can be taken away by a game studio. There are no incentives around earning, collecting or trading various digital assets. Blockchain offers gamers the opportunity for true ownership. Web2 games can currently handle more transactions and active players online than a web3 game, but as blockchain scaling solutions mature the gap is closing.
+## 8. Payment rails
 
-A payment rail is the digital infrastructure enabling money transfers. TradFi, or Traditional finance, is made up of centralised institutions who control the flow of funds between permissioned parties in exchange for transaction fees. These fees are usually high compared to blockchain alternatives, usually because of the lack of credible remittance alternatives.
+- A **payment rail** = digital infrastructure enabling money transfers.
+- **TradFi** = centralised institutions controlling the flow of funds between permissioned parties, in exchange for fees. Fees are usually high compared with blockchain, mostly due to the lack of credible remittance alternatives.
+- On a blockchain, counterparties transfer value on a **public ledger** that records and validates details publicly, at the same time, for everyone.
+- Blockchain disrupts the hierarchical financial system by **"killing the middleman"**. The middlemen include:
+    - **RTGS** (real-time gross settlement) networks or equivalents
+    - **Interbank networks**: **CHIPS** (Clearing House Interbank Payments System), **ACH** (automated clearing house), **Fedwire**, and others
+    - **SWIFT** (Society for Worldwide Interbank Financial Telecommunications): the communication network for ACH and wire transfers
+    - **Credit card networks**: Visa, MasterCard, American Express. _Visa is now enabling crypto withdrawals at large scale._
+    - **Fintech apps**: Stripe, PayPal, Revolut etc., which connect to ACH or RTGS to settle payments. They now also let users buy, hold and sell crypto.
+- **Irreversibility:** blockchain transactions are irreversible, but **custom logic in smart contracts** can allow some recourse for disputes, failure to deliver a service, or other breaches of trust.
+- Blockchains are **permissionless** and inclusive for anyone with an internet connection.
 
-On a blockchain, counterparties transfer value on a public ledger that records and validates the details publicly at the same time for everyone. Blockchain disrupts the current hierarchical financial system by ‘killing the middleman’. The middleman, in this context, can be any of the following intermediaries:
+---
 
-- Real-time gross settlement (RTGS) networks, or equivalent fund transfer systems.
-    
-- Interbank networks – such as the Clearing House Interbank Payments System (CHIPS), automated clearing house (ACH) and Fedwire payment system among others
-    
-- Society for Worldwide Interbank Financial Telecommunications (SWIFT), the communication network for both ACH and wire transfers.
-    
-- Credit card networks like like Visa, MasterCard and American Express. Visa is now enabling Crypto withdrawals on a large scale.
-    
-- Fintech applications like Stripe, PayPal, Revolut, etc. which connect to the ACH or RTGS networks to settle payments also now enable users to buy, hold and sell cryptocurrencies.
-    
+## 9. Supply chains and traceability
 
-Blockchain transactions are irreversible but custom logic can be codified in smart contracts to allow some recourse in the event of a dispute, failure to deliver service, or other form of trust breach. Blockchains are permissionless, and inclusive for anyone with an internet connection.
+- Supply chains often involve many intermediaries consolidating many data sources to track goods from supplier to consumer.
+- Blockchain simplifies interactions between stakeholders: every touch-point can be tracked and logged on a shared public ledger.
+- **Shipping:** international shippers use blockchain to monitor shipments and make sure containers aren't tampered with.
+- **Perishables:** businesses can review the whole path on-chain. **Payment can be made on confirmed delivery**, when a smart contract triggers the transfer.
+- **Benefits for everyone:**
+    - more transparency makes auditors' lives easier
+    - adverse conditions or mistreatment (intentional or not) can be identified and mitigated
+    - in the developing world, fewer intermediaries to pay (financial inclusion)
+- Replicable wherever **transparency and traceability** are needed.
 
-Supply chains often involve many different intermediaries consolidating many different data sources to track goods from suppliers to consumers. Blockchain technology can simplify interactions between different stakeholders where every touch-point can be tracked and logged on a shared public ledger.
+### Real examples
 
-Many industries and verticals rely on efficient supply chains. International shippers have adopted blockchain technology to monitor shipments and ensure containers are not tampered with. Any business relying on perishable goods being delivered in time can review the entire path tracked on a blockchain. Payment can be made once delivery is confirmed, when a smart contract initiates a transaction transferring funds.
+- **Georgian wine:** the **Cardano Foundation**, with **Georgia's National Wine Agency**, the **Bolnisi Winemakers Association** and **Scantrust**, built a solution on Cardano to ensure the **quality and authenticity** of Georgian wine.
+- **Dubai Police:** **Mohammad AlShamsi** (Head of Firearms and Toolmarks Section) explained at the **Cardano Summit 2023** how blockchain helps combat organized crime through shared, transparent data for **tracing firearms across borders**.
 
-The benefits are self-evident for all parties involved. Enhanced transparency makes life easy for auditors. Any adverse conditions or mistreatment, whether intentional or unintentional, can be identified and mitigated. Continuing the theme of financial inclusion, those in the developing world have less intermediaries to pay.
+---
 
-This solution can be replicated in many contexts where transparency and traceability is required. For example, the Cardano Foundation, in collaboration with Georgia’s National Wine Agency, and the Bolnisi Winemakers Association and Scantrust, created a solution on the Cardano blockchain to ensure the quality and authenticity of Georgian wine.
+## 10. Healthcare
 
-Mohammad AlShamsi, Head of Firearms and Toolmarks Section of the Dubai Police, explained at the Cardano Summit 2023 how blockchain technology is helping combat organized crime by enabling shared, transparent data for tracing firearms across borders.
+- Any process with **disparate data sources** can benefit. Healthcare is an obvious candidate: digital health records can be stored and shared with strong security.
+- Advances in **Zero Knowledge** and **private smart contracts** mean healthcare data systems could shield confidential information while still allowing **selective disclosure** when needed.
+- Hospitals today usually have information **siloed across different data systems**.
+- With blockchain plus **DIDs**, patients and providers can **control what they share and with whom**.
 
-Any process where there are disparate data sources can benefit from blockchain. Healthcare is an obvious candidate for such a solution as digital health records can be stored and shared with high security assurances. Advancements in Zero Knowledge and private smart contracts mean Healthcare information data management systems can potentially shield confidential information, while still availing of selective disclosure when necessary.
+---
 
-Hospitals today typically contain information siloed across different data systems. With the use of blockchain and decentralized identifiers (DID), patients and healthcare providers can control what they share and with whom.
+## 11. ESG (Environmental, Social and Governance)
 
-Many businesses now have an ESG (Environmental, Social and Governance) mandate. Adopting blockchain for their ESG data allows businesses to demonstrate trust, accuracy, and regulatory compliance. Blockchain's decentralized nature means their ESG reporting is more reliable and also verifiable.
+- Many businesses now have an ESG mandate. Putting ESG data on blockchain lets them show **trust, accuracy and regulatory compliance**. Because blockchain is decentralized, ESG reporting is more **reliable and verifiable**.
+- **Proof of ESG**: a business using blockchain to verify ESG data. Once ESG data is recorded it **can't be tampered with**, which ensures integrity. This transparency and trust is missing from traditional ESG reporting.
+- **Veritree**: the **Cardano Foundation** partnered with them. World's first fully integrated platform for **tree restoration through blockchain**.
+- **Sustainable Ada**: a project that compiled the **Cardano Impact Report 2023**, describing how blockchain is recalibrating how we view value, identity, and positive social and environmental impact.
 
-Proof of ESG is an example of a business that uses blockchain technology to verify ESG data. By leveraging blockchain technology, the platform ensures that once ESG data is recorded, it cannot be tampered with, ensuring data integrity. This level of transparency and trust in ESG data is missing from traditional ESG reporting methods.
+---
 
-The Cardano Foundation has partnered with Veritree who are the world’s first, fully integrated platform for tree restoration through blockchain. There is also a Sustainable Ada project who compiled the Cardano Impact Report 2023 describing how blockchain is recalibrating the way we view value, identity, positive social and environmental impact.
+## Wrap-up
 
-We only really scratched the surface of what’s possible on blockchain. We hope this course has whetted your appetite and you’ll join us again in future courses.
+- The course only scratches the surface of what's possible on blockchain.
+
+---
+
+## Quick reference: key terms
+
+- **Permissioned / permissionless**: restricted participation with identities / open to anyone.
+- **HIPAA**: US health data protection law.
+- **DID / AID / KERI**: decentralized identifiers / autonomic identifiers / Key Event Receipt Infrastructure.
+- **Blue vs red ocean**: new uncontested market vs competing head-on in an existing one.
+- **Porter's Five Forces**: new entrants, buyer power, supplier power, substitutes, rivalry.
+- **SWOT**: Strengths, Weaknesses, Opportunities, Threats.
+- **Gartner Hype Cycle**: maturity/adoption curve of a technology.
+- **Payment rail**: infrastructure for moving money.
+- **DLT**: distributed ledger technology.
+- **Web 1.0 / 2.0 / 3.0**: read / read-write / read-write-own.
+- **BAT**: Basic Attention Token (Brave, ERC-20).
+- **IPFS**: Interplanetary File System.
+- **DeFi / TradFi**: decentralized / traditional finance.
+- **TVL**: total value locked.
+- **DYOR**: do your own research.
+- **CEX / DEX**: centralized / decentralized exchange.
+- **Yield farming**: depositing tokens in a liquidity pool for rewards.
+- **LP token**: Liquidity Provider token.
+- **Stablecoin**: pegged, fixed-price crypto.
+- **Wrapped asset**: token version of an asset on another chain (e.g. Wrapped BTC).
+- **POAP**: Proof of Attendance Protocol.
+- **Digital twin**: digital copy of a real-world item.
+- **GameFi / play to earn**: gaming with earnable, tradable digital assets.
+- **Metaverse**: 3D virtual world on AR/VR.
+- **RTGS / CHIPS / ACH / Fedwire / SWIFT**: traditional payment and messaging networks.
+- **ESG**: Environmental, Social and Governance.
+- **Kimberley Process**: 2003 trade regime against blood diamonds.
