@@ -1,0 +1,1 @@
+https://github.com/cardano-foundation/cardano-academy/tree/main/courses/What_is_Open_Source%3F
